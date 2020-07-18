@@ -13,7 +13,7 @@ class CashRegister
   def add_item(title, price, quantity = 1)
     @total +=pricequantity
     @last_transaction = pricequantity
-    quantity.times do 
+    quantity.times do #try each here 
       @items.push(title)
     end 
   end 
