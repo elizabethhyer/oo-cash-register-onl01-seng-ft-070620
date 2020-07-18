@@ -10,6 +10,10 @@ class CashRegister
     @items = []
   end
   
+  def items 
+    @items 
+  end 
+  
   def add_item(title, price, quantity = 1)
     @total +=pricequantity
     @last_transaction = pricequantity
