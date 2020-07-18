@@ -10,10 +10,6 @@ class CashRegister
     @items = []
   end
   
-  def items 
-    @items 
-  end 
-  
   def add_item(title, price, quantity = 1)
     @total +=pricequantity
     @last_transaction = pricequantity
@@ -30,6 +26,10 @@ class CashRegister
      return "There is no discount to apply."
      end
     end
+    
+    def items 
+      @items 
+    end 
     
     def void_last_transaction
       last_item = @items.pop()
