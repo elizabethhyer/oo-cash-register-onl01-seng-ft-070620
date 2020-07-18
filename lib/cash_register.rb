@@ -9,9 +9,9 @@ class CashRegister
   end
   
   def add_item(title, price, quantity = 1)
-    @total += price #quantity
-    @last_transaction = price #quantity
-    quantity.times do #try each here 
+    @total += price 
+    @last_transaction = price 
+    quantity.times do 
       @items.push(title)
     end 
   end 
